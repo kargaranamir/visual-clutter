@@ -1,0 +1,6 @@
+
+*.pyc
+*.pyd
+python3/venv/*
+python3/.idea/*
+
