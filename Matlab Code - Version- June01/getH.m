@@ -1,1 +1,0 @@
-function out = getH(in)[m,n] = size(in);out = in(:,1:n/4);return;
