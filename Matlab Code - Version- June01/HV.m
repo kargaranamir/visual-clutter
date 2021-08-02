@@ -1,1 +1,0 @@
-function [out] = HV(in)%% Outputs H-V%%	Usage: [out] = HV(input_image)H = getH(in);V = getV(in);out = H-V;return;
