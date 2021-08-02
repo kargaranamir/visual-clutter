@@ -3,8 +3,8 @@ Python Implementaion of two measures of visual clutter (Feature Congestion and S
 
 
 
-Related Repositoris: 
-[Piranhas](https://github.com/ArturoDeza/Piranhas)
-[Aalto Interface Metrics (AIM)](https://github.com/aalto-ui/aim)
-[pyrtools: tools for multi-scale image processing](https://github.com/LabForComputationalVision/pyrtools)
+## Related Repositoris: 
+- [Piranhas](https://github.com/ArturoDeza/Piranhas)
+- [Aalto Interface Metrics (AIM)](https://github.com/aalto-ui/aim)
+- [pyrtools: tools for multi-scale image processing](https://github.com/LabForComputationalVision/pyrtools)
 
