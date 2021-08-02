@@ -11,9 +11,9 @@ setuptools.setup(
     description="Python Implementation of two measures of visual clutter (Feature Congestion and Subband Entropy)",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/kargaranamir/visual-clutter",
+    url="https://github.com/kargaranamir/visual_clutter",
     project_urls={
-        "Bug Tracker": "https://github.com/kargaranamir/visual-clutter/issues",
+        "Bug Tracker": "https://github.com/kargaranamir/visual_clutter/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
