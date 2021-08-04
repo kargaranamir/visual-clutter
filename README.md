@@ -15,7 +15,7 @@ Python Implementation of two measures of visual clutter (Feature Congestion and 
 - Pillow >= 8.3.1
 - pyrtools == 1.0.0
 
-## How to Install srccheck
+## How to Install visual_clutter
 
 ```
 pip3 install git+https://github.com/kargaranamir/visual-clutter
