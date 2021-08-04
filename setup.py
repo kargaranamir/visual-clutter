@@ -18,7 +18,7 @@ setuptools.setup(
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: Linux/Mac Independent",
+        "Operating System :: Linux or on OSX",
     ],
     install_requires=[
         'numpy',
