@@ -19,7 +19,6 @@ Python Implementation of two measures of visual clutter (Feature Congestion and 
 
 ```
 pip3 install git+https://github.com/kargaranamir/visual-clutter
-
 ```
 
 ## How to Upgrade visual_clutter
