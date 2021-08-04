@@ -4,7 +4,7 @@
 
 import unittest
 import sys
-sys.path.insert(1, '../src/')
+sys.path.insert(1, '../visual_clutter/')
 from utils import *
 
 class TestUtilsMethods(unittest.TestCase):

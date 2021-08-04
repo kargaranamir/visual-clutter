@@ -8,7 +8,7 @@ setuptools.setup(
     version="1.0.0",
     author="Amir Hossein Kargaran",
     author_email="kargaranamir@gmail.com",
-    description="Python Implementation of two measures of visual clutter (Feature Congestion and Subband Entropy)",
+    description="Python implementation of two measures of visual clutter (Feature Congestion and Subband Entropy)",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/kargaranamir/visual_clutter",
@@ -20,7 +20,14 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: Linux/Mac Independent",
     ],
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    install_requires=[
+        'numpy',
+        'scipy',
+        'opencv-python',
+        'Pillow',
+        'pyrtools'
+    ],
+    packages=setuptools.find_packages(),
+    keywords = ['visual clutter', 'feature congestion', 'subband entropy'],
     python_requires=">=3.6",
 )

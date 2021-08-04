@@ -4,7 +4,7 @@
 
 import unittest
 import sys
-sys.path.insert(1, '../src/')
+sys.path.insert(1, '../visual_clutter/')
 from clutter import *
 
 clt = Clutter('test.jpg', numlevels=3, contrast_filt_sigma=1, contrast_pool_sigma=3, color_pool_sigma=3)
