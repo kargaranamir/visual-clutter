@@ -9,7 +9,7 @@ from PIL import Image
 from visual_clutter.utils import *
 
 
-class Clutter():
+class Vlc():
     """
     
     Class of two measures of visual clutter (Feature Congestion and Subband Entropy)
