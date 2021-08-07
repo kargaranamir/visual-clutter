@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="visual_clutter",
-    version="1.0.0",
+    version="1.0.1",
     author="Amir Hossein Kargaran",
     author_email="kargaranamir@gmail.com",
     description="Python implementation of two measures of visual clutter (Feature Congestion and Subband Entropy)",
@@ -25,7 +25,8 @@ setuptools.setup(
         'opencv-python >= 4.5.3',
 	'scipy == 1.7.0',
 	'Pillow >= 8.3.1',
-	'pyrtools == 1.0.0'
+	'pyrtools == 1.0.0',
+	'scikit-image >= 0.16.2'
     ],
     packages=setuptools.find_packages(),
     keywords = ['visual clutter', 'feature congestion', 'subband entropy'],

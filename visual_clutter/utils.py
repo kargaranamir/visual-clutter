@@ -7,6 +7,7 @@ import numpy as np
 from scipy import signal
 from scipy import ndimage
 from PIL import Image
+from skimage import transform
 
 
 def RGB2Lab(im):
@@ -372,7 +373,29 @@ def poolnew(in_, sigma=None):
     return out
 
 
-def imrotate(im, angle, method='nearest', bbox='crop'):
+def imrotate_skimage(im, angle, method='bicubic', bbox='crop'):
+    """
+    
+    rotate an image by Skimage package.  Basically just a wrapper to 
+    deal with the fact that skimage thinks floating point images need to be between [-1.0,1.0]
+    
+    angle is in DEGREE
+    
+    """
+    
+    func_bbox = {'loose':True,'crop':False}
+
+    immin = np.min(im)
+    imrange = np.max(im) - immin
+    im = im - immin
+    im = im/imrange
+    im = transform.rotate(im, angle, order = 3, resize=func_bbox[bbox])
+    im = im * imrange
+    im = im + immin 
+    return im
+
+
+def imrotate_pil(im, angle, method='nearest', bbox='crop'):
     """
     
     roatate an image by PIL package
@@ -388,7 +411,7 @@ def imrotate(im, angle, method='nearest', bbox='crop'):
     im_rot = PIL_im.rotate(angle, expand = func_bbox[bbox], resample = func_method[method])
     return np.array(im_rot)
 
-def imrotate2(im, angle, method='cubic', bbox='crop'):
+def imrotate_scipy(im, angle, method='bicubic', bbox='crop'):
     """
     
     roatate an image by Scipy package
@@ -396,7 +419,7 @@ def imrotate2(im, angle, method='cubic', bbox='crop'):
     """
 
     # By default rotate uses cubic interpolation
-    return ndimage.rotate(im, angle=angle)
+    return ndimage.rotate(im, angle=angle, order=3, reshape=False)
 
 
 def orient_filtnew(pyr, sigma=16/14):
@@ -434,18 +457,18 @@ def orient_filtnew(pyr, sigma=16/14):
     V = H.T
 
 
-    GGa = imrotate(Ga, 45, 'bicubic', 'crop')
+    GGa = imrotate_skimage(Ga, 45, 'bicubic', 'crop')
     GGa = GGa/sum(sum(GGa))
-    GGb = imrotate(Gb, 45, 'bicubic', 'crop')
+    GGb = imrotate_skimage(Gb, 45, 'bicubic', 'crop')
     GGb = GGb/sum(sum(GGb))
-    GGc = imrotate(Gc, 45, 'bicubic', 'crop')
+    GGc = imrotate_skimage(Gc, 45, 'bicubic', 'crop')
     GGc = GGc/sum(sum(GGc))
     R = -GGa+2*GGb-GGc
-    GGa = imrotate(Ga, -45, 'bicubic', 'crop')
+    GGa = imrotate_skimage(Ga, -45, 'bicubic', 'crop')
     GGa = GGa/sum(sum(GGa))
-    GGb = imrotate(Gb, -45, 'bicubic', 'crop')
+    GGb = imrotate_skimage(Gb, -45, 'bicubic', 'crop')
     GGb = GGb/sum(sum(GGb))
-    GGc = imrotate(Gc, -45, 'bicubic', 'crop')
+    GGc = imrotate_skimage(Gc, -45, 'bicubic', 'crop')
     GGc = GGc/sum(sum(GGc))
     L = -GGa+2*GGb-GGc
 
