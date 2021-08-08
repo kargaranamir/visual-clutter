@@ -35,10 +35,10 @@ from visual_clutter import Vlc
 
 clt = Vlc('./tests/test.jpg', numlevels=3, contrast_filt_sigma=1, contrast_pool_sigma=3, color_pool_sigma=3)
 
-% get Feature Congestion clutter of a test map:
+# get Feature Congestion clutter of a test map:
 clutter_scalar_fc, clutter_map_fc = clt.getClutter_FC(p=1, pix=1)
 
-% get Subband Entropy clutter of the test map:
+# get Subband Entropy clutter of the test map:
 clutter_scalar_se = clt.getClutter_SE(wlevels=3, wght_chrom=0.0625)
 
 # just compute and display color clutter map(s)
