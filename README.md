@@ -34,6 +34,7 @@ pip3 install --upgrade git+https://github.com/kargaranamir/visual-clutter
 ```
 from visual_clutter import Vlc
 
+# make visual clutter object and load test map and set parameters
 clt = Vlc('./tests/test.jpg', numlevels=3, contrast_filt_sigma=1, contrast_pool_sigma=3, color_pool_sigma=3)
 
 # get Feature Congestion clutter of a test map:
