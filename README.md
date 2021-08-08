@@ -31,16 +31,37 @@ pip3 install --upgrade git+https://github.com/kargaranamir/visual-clutter
 
 ## How to use (Examples)
 ```
-from visual_clutter import Clutter
-clt = Clutter('./tests/test.jpg', numlevels=3, contrast_filt_sigma=1, contrast_pool_sigma=3, color_pool_sigma=3)
-color_clutter = clt.colorClutter(color_pix=1)
-contrast_clutter = clt.contrastClutter(contrast_pix=1)
-orientation_clutter = clt.orientationClutter(orient_pix=1)
-color_clutter, contrast_clutter, orientation_clutter = clt.computeClutter(color_pix=1, contrast_pix=1, orient_pix=1)
+from visual_clutter import Vlc
+
+clt = Vlc('./tests/test.jpg', numlevels=3, contrast_filt_sigma=1, contrast_pool_sigma=3, color_pool_sigma=3)
+
+% get Feature Congestion clutter of a test map:
 clutter_scalar_fc, clutter_map_fc = clt.getClutter_FC(p=1, pix=1)
 
+% get Subband Entropy clutter of the test map:
+clutter_scalar_se = clt.getClutter_SE(wlevels=3, wght_chrom=0.0625)
+
+# just compute and display color clutter map(s)
+color_clutter = clt.colorClutter(color_pix=1)
+
+# just compute and display contrast clutter map(s)
+contrast_clutter = clt.contrastClutter(contrast_pix=1)
+
+# just compute and display contrast clutter map(s)
+orientation_clutter = clt.orientationClutter(orient_pix=1)
+
+
+
 print(f'clutter_scalar_fc: {clutter_scalar_fc}')
-print(f'clutter_scalar_se: {clt.getClutter_SE(wlevels=3, wght_chrom=0.0625)}')
+print(f'clutter_scalar_se: {clutter_scalar_se}')
+```
+
+## Reference
+```
+Ruth Rosenholtz, Yuanzhen Li, and Lisa Nakano. "Measuring Visual Clutter". 
+Journal of Vision, 7(2), 2007. http://www.journalofvision.com/7/2/
+
+Ruth Rosenholtz, Yuanzhen Li, and Lisa Nakano, May 2007.
 ```
 
 ## Related Repositories
