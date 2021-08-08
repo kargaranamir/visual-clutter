@@ -14,6 +14,7 @@ Python Implementation of two measures of visual clutter (Feature Congestion and 
 - scipy == 1.7.0
 - Pillow >= 8.3.1
 - pyrtools == 1.0.0
+- scikit-image >= 0.16.2
 
 ## How to Install visual_clutter
 
@@ -41,6 +42,9 @@ clutter_scalar_fc, clutter_map_fc = clt.getClutter_FC(p=1, pix=1)
 # get Subband Entropy clutter of the test map:
 clutter_scalar_se = clt.getClutter_SE(wlevels=3, wght_chrom=0.0625)
 
+print(f'clutter_scalar_fc: {clutter_scalar_fc}')
+print(f'clutter_scalar_se: {clutter_scalar_se}')
+
 # just compute and display color clutter map(s)
 color_clutter = clt.colorClutter(color_pix=1)
 
@@ -50,10 +54,6 @@ contrast_clutter = clt.contrastClutter(contrast_pix=1)
 # just compute and display contrast clutter map(s)
 orientation_clutter = clt.orientationClutter(orient_pix=1)
 
-
-
-print(f'clutter_scalar_fc: {clutter_scalar_fc}')
-print(f'clutter_scalar_se: {clutter_scalar_se}')
 ```
 
 ## Reference
