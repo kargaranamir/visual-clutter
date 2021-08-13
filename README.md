@@ -52,7 +52,7 @@ color_clutter = clt.colorClutter(color_pix=1)
 # just compute and display contrast clutter map(s)
 contrast_clutter = clt.contrastClutter(contrast_pix=1)
 
-# just compute and display contrast clutter map(s)
+# just compute and display orientation clutter map(s)
 orientation_clutter = clt.orientationClutter(orient_pix=1)
 
 ```
