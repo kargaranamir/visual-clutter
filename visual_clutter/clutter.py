@@ -43,7 +43,7 @@ class Vlc():
     
     """
     
-    def __init__(self, inputImage, numlevels=3, contrast_filt_sigma=1, contrast_pool_sigma=None, color_pool_sigma=3):
+    def __init__(self, inputImage, numlevels=3, contrast_filt_sigma=1, contrast_pool_sigma=None, color_pool_sigma=3, output_dir='.', prefix='test'):
         self.inputImage = inputImage
         self.numlevels = numlevels
         self.contrast_filt_sigma = contrast_filt_sigma
@@ -51,6 +51,10 @@ class Vlc():
         self.color_pool_sigma = color_pool_sigma
         # orient_pool_sigma is the sigma (standard deviation) of this Gaussian window, and here is hard-wired to 7/2.
         self.orient_pool_sigma = 7/2
+        
+        # address of output images
+        self.dir = output_dir + '/' if output_dir[-1]!='/' else output_dir
+        self.prefix = prefix
         
         if isinstance(inputImage, str): 
             self.im = cv2.imread(inputImage)
@@ -171,13 +175,13 @@ class Vlc():
                 new_PIL = new_PIL.resize(size, Image.ANTIALIAS)
                 
                 # save clutter level(s) 
-                new_PIL.save(f'{method} at level {scale+1}.png')
+                new_PIL.save(f'{self.dir}{self.prefix}_{method} at level {scale+1}.png')
 
         new_arr = normlize(clutter_map)
         new_PIL = Image.fromarray(new_arr)
         
         # save collapsed clutter map(s)
-        new_PIL.save(f'collapsed {method} map.png')
+        new_PIL.save(f'{self.dir}{self.prefix}_collapsed {method} map.png')
 
 
     def computeColorClutter(self):
@@ -559,7 +563,7 @@ class Vlc():
   
         Examples
         --------
-        >>> clt = Clutter('test.jpg', numlevels=3, contrast_filt_sigma=1, contrast_pool_sigma=3, color_pool_sigma=3)
+        >>> clt = Vlc('test.jpg', numlevels=3, contrast_filt_sigma=1, contrast_pool_sigma=3, color_pool_sigma=3)
         >>> color_clutter, contrast_clutter, orientation_clutter = clt.computeClutter(color_pix=1, contrast_pix=1, orient_pix=1)
   
         """
@@ -602,7 +606,7 @@ class Vlc():
     
         Examples
         --------
-        >>> clt = Clutter('test.jpg', numlevels=3, contrast_filt_sigma=1, contrast_pool_sigma=3, color_pool_sigma=3)
+        >>> clt = Vlc('test.jpg', numlevels=3, contrast_filt_sigma=1, contrast_pool_sigma=3, color_pool_sigma=3)
         >>> clutter_scalar_fc, clutter_map_fc = clt.getClutter_FC(p=1, pix=1)
         
         """
@@ -631,7 +635,7 @@ class Vlc():
         Examples
         --------
         # luminance channel:
-        >>> clt = Clutter('test.jpg')
+        >>> clt = Vlc('test.jpg')
         >>> l_channel = clt.L
         >>> en_band = clt.band_entropy(l_channel, wlevels=3, wor=4)
         
@@ -671,7 +675,7 @@ class Vlc():
         
         Examples
         --------
-        >>> clt = Clutter('test.jpg')
+        >>> clt = Vlc('test.jpg')
         >>> clutter_se = clt.getClutter_SE(wlevels=3, wght_chrom=0.0625)
         
         """
