@@ -65,6 +65,19 @@ Journal of Vision, 7(2), 2007. http://www.journalofvision.com/7/2/
 Ruth Rosenholtz, Yuanzhen Li, and Lisa Nakano, May 2007.
 ```
 
+## Citing
+visual_clutter python package is developed and supported by User Interfaces Research Group at Aalto University. If you use any part of this library in your research, please cite it using the following BibTex entry.
+```
+@misc{visual_clutter,
+  author = {User Interfaces Research Group at Aalto University},
+  title = {visual_clutter Python Library},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub Repository},
+  howpublished = {\url{https://github.com/kargaranamir/visual_clutter}},
+}
+```
+
 ## Related Repositories
 - [Piranhas](https://github.com/ArturoDeza/Piranhas)
 - [Aalto Interface Metrics (AIM)](https://github.com/aalto-ui/aim)
