@@ -70,7 +70,7 @@ visual_clutter python package is developed and supported by User Interfaces Rese
 ```
 @misc{visual_clutter,
   author = {User Interfaces Research Group at Aalto University},
-  title = {visual_clutter Python Library},
+  title = {Visual Clutter Python Library},
   year = {2021},
   publisher = {GitHub},
   journal = {GitHub Repository},
