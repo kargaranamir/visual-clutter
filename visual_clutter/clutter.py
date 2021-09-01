@@ -338,7 +338,7 @@ class Vlc():
         # Get a Gaussian filter for computing the variance of contrast
         # Since we used a Gaussian pyramid to find contrast features, these filters 
         # have the same size regardless of the scale of processing.
-        bigG = RRgaussfilter1D(round(self.color_pool_sigma*2), self.color_pool_sigma)
+        bigG = RRgaussfilter1D(round(self.contrast_pool_sigma*2), self.contrast_pool_sigma)
 
         for scale in range(0,m):
             for channel in range(0,n):
