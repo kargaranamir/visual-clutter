@@ -66,10 +66,18 @@ Ruth Rosenholtz, Yuanzhen Li, and Lisa Nakano, May 2007.
 ```
 
 ## Citing
-visual_clutter python package is developed and supported by User Interfaces Research Group at Aalto University. If you use any part of this library in your research, please cite it using the following BibTex entry.
+visual_clutter python package is now part of [AIM2](https://github.com/aalto-ui/aim). AIM2 developed and supported by User Interfaces Research Group at Aalto University. If you use any part of this library in your research, please cite it using the following BibTex entry.
 ```
+@inproceedings{oulasvirta2018aalto,
+  title={Aalto Interface Metrics (AIM) A Service and Codebase for Computational GUI Evaluation},
+  author={Oulasvirta, Antti and De Pascale, Samuli and Koch, Janin and Langerak, Thomas and Jokinen, Jussi and Todi, Kashyap and Laine, Markku and Kristhombuge, Manoj and Zhu, Yuxi and Miniukovich, Aliaksei and others},
+  booktitle={The 31st Annual ACM Symposium on User Interface Software and Technology Adjunct Proceedings},
+  pages={16--19},
+  year={2018}
+}
+
 @misc{visual_clutter,
-  author = {User Interfaces Research Group at Aalto University},
+  author = {Kargaran, Amir Hossein},
   title = {Visual Clutter Python Library},
   year = {2021},
   publisher = {GitHub},
