@@ -12,7 +12,7 @@ Python Implementation of two measures of visual clutter (Feature Congestion and 
 ## How to Install visual_clutter
 
 ```
-pip install visual_clutter
+pip install visual-clutter
 ```
 
 
