@@ -69,7 +69,7 @@ visual_clutter python package is now part of [AIM2](https://github.com/aalto-ui/
   year = {2021},
   publisher = {GitHub},
   journal = {GitHub Repository},
-  howpublished = {\url{https://github.com/kargaranamir/visual_clutter}},
+  howpublished = {\url{https://github.com/kargaranamir/visual-clutter}},
 }
 ```
 
