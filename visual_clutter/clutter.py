@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
 import cv2
 import numpy as np
 import pyrtools as pt
@@ -175,13 +174,13 @@ class Vlc():
                 new_PIL = new_PIL.resize(size, Image.ANTIALIAS)
                 
                 # save clutter level(s) 
-                new_PIL.save(f'{self.dir}{self.prefix}_{method} at level {scale+1}.png')
+                new_PIL.save(f'{self.dir}{self.prefix}_{method}_at_level_{scale+1}.png')
 
         new_arr = normlize(clutter_map)
         new_PIL = Image.fromarray(new_arr)
         
         # save collapsed clutter map(s)
-        new_PIL.save(f'{self.dir}{self.prefix}_collapsed {method} map.png')
+        new_PIL.save(f'{self.dir}{self.prefix}_collapsed_{method}_map.png')
 
 
     def computeColorClutter(self):
