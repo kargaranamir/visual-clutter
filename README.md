@@ -1,4 +1,7 @@
 # visual-clutter
+[![Pypi Package](https://badgen.net/pypi/v/visual-clutter)](https://pypi.org/project/visual-clutter/)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/kargaranamir/visual-clutter)
+
 Python Implementation of two measures of visual clutter (Feature Congestion and Subband Entropy), [Matlab Version](https://dspace.mit.edu/handle/1721.1/37593), [+ library dependency](https://nl.mathworks.com/matlabcentral/fileexchange/52571-matlabpyrtools).
 
 
