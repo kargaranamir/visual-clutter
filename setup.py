@@ -19,9 +19,12 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/kargaranamir/visual_clutter/issues",
     },
     classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: Linux or OSX",
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: MacOS',
+        'Operating System :: POSIX :: Linux'
     ],
     install_requires=required,
     packages=setuptools.find_packages(),
