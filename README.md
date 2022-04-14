@@ -8,24 +8,11 @@ Python Implementation of two measures of visual clutter (Feature Congestion and 
 * This utility uses [Pyrtools](https://pyrtools.readthedocs.io/en/latest/). So you will need to run it on Linux or on OSX. Windows is NOT supported because of issues with the C compiler (gcc isn't necessarily installed).
 
 
-## Dependencies
-- opencv-python >= 4.5.3
-- numpy >= 1.20.2
-- scipy == 1.7.0
-- Pillow >= 8.3.1
-- pyrtools == 1.0.0
-- scikit-image >= 0.16.2
 
 ## How to Install visual_clutter
 
 ```
-pip3 install git+https://github.com/kargaranamir/visual_clutter
-```
-
-## How to Upgrade visual_clutter
-
-```
-pip3 install --upgrade git+https://github.com/kargaranamir/visual_clutter
+pip install visual_clutter
 ```
 
 
@@ -90,4 +77,3 @@ visual_clutter python package is now part of [AIM2](https://github.com/aalto-ui/
 - [Piranhas](https://github.com/ArturoDeza/Piranhas)
 - [Aalto Interface Metrics (AIM)](https://github.com/aalto-ui/aim)
 - [pyrtools: tools for multi-scale image processing](https://github.com/LabForComputationalVision/pyrtools)
-

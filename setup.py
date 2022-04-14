@@ -1,5 +1,8 @@
 import setuptools
 
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
+
 with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
@@ -20,14 +23,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: Linux or OSX",
     ],
-    install_requires=[
-        'numpy >= 1.20.2',
-        'opencv-python >= 4.5.3',
-	'scipy == 1.7.0',
-	'Pillow >= 8.3.1',
-	'pyrtools == 1.0.0',
-	'scikit-image >= 0.16.2'
-    ],
+    install_requires=required,
     packages=setuptools.find_packages(),
     keywords = ['visual clutter', 'feature congestion', 'subband entropy'],
     python_requires=">=3.6",
