@@ -8,15 +8,15 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="visual_clutter",
-    version="1.0.2",
+    version="1.0.3",
     author="Amir Hossein Kargaran",
     author_email="kargaranamir@gmail.com",
     description="Python implementation of two measures of visual clutter (Feature Congestion and Subband Entropy)",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/kargaranamir/visual_clutter",
+    url="https://github.com/kargaranamir/visual-clutter",
     project_urls={
-        "Bug Tracker": "https://github.com/kargaranamir/visual_clutter/issues",
+        "Bug Tracker": "https://github.com/kargaranamir/visual-clutter/issues",
     },
     classifiers=[
         'Programming Language :: Python :: 3.6',
