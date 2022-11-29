@@ -55,16 +55,9 @@ Journal of Vision, 7(2), 2007. http://www.journalofvision.com/7/2/
 Ruth Rosenholtz, Yuanzhen Li, and Lisa Nakano, May 2007.
 ```
 
-## Citing
-visual_clutter python package is now part of [AIM2](https://github.com/aalto-ui/aim). AIM2 developed and supported by User Interfaces Research Group at Aalto University. If you use any part of this library in your research, please cite it using the following BibTex entry.
+## Citation
+visual_clutter python package is now part of [AIM2](https://github.com/aalto-ui/aim). AIM2 developed and supported by User Interfaces Research Group at Aalto University. If you use any part of this library in your research, please cite it using the following BibTex entry. Bibtex entry for AIM2 will be added once it is released.
 ```
-@inproceedings{oulasvirta2018aalto,
-  title={Aalto Interface Metrics (AIM) A Service and Codebase for Computational GUI Evaluation},
-  author={Oulasvirta, Antti and De Pascale, Samuli and Koch, Janin and Langerak, Thomas and Jokinen, Jussi and Todi, Kashyap and Laine, Markku and Kristhombuge, Manoj and Zhu, Yuxi and Miniukovich, Aliaksei and others},
-  booktitle={The 31st Annual ACM Symposium on User Interface Software and Technology Adjunct Proceedings},
-  pages={16--19},
-  year={2018}
-}
 
 @misc{visual_clutter,
   author = {Kargaran, Amir Hossein},
@@ -80,3 +73,7 @@ visual_clutter python package is now part of [AIM2](https://github.com/aalto-ui/
 - [Piranhas](https://github.com/ArturoDeza/Piranhas)
 - [Aalto Interface Metrics (AIM)](https://github.com/aalto-ui/aim)
 - [pyrtools: tools for multi-scale image processing](https://github.com/LabForComputationalVision/pyrtools)
+
+
+## Cited Works
+- [Master Thesis](https://www.merlin.uzh.ch/contributionDocument/download/15217): Unveiling the Inner Structures of the Montreux Jazz Festival Concert
