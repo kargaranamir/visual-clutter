@@ -56,9 +56,9 @@ Ruth Rosenholtz, Yuanzhen Li, and Lisa Nakano, May 2007.
 ```
 
 ## Citation
-visual_clutter python package is now part of [AIM2](https://github.com/aalto-ui/aim). AIM2 developed and supported by User Interfaces Research Group at Aalto University. If you use any part of this library in your research, please cite it using the following BibTex entry. Bibtex entry for AIM2 will be added once it is released.
-```
+visual_clutter python package is now part of [AIM2](https://github.com/aalto-ui/aim). If you use any part of this library in your research, please cite it using the following BibTex entry. Bibtex entry for AIM2 will be added once it is released.
 
+```
 @misc{visual_clutter,
   author = {Kargaran, Amir Hossein},
   title = {Visual Clutter Python Library},
@@ -75,5 +75,5 @@ visual_clutter python package is now part of [AIM2](https://github.com/aalto-ui/
 - [pyrtools: tools for multi-scale image processing](https://github.com/LabForComputationalVision/pyrtools)
 
 
-## Cited Works
+## Studies Referencing Our Package
 - [Master Thesis](https://www.merlin.uzh.ch/contributionDocument/download/15217): Unveiling the Inner Structures of the Montreux Jazz Festival Concert
