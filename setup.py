@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="visual_clutter",
-    version="1.0.6",
+    version="1.0.7",
     author="Amir Hossein Kargaran",
     author_email="kargaranamir@gmail.com",
     description="Python implementation of two measures of visual clutter (Feature Congestion and Subband Entropy)",
@@ -22,6 +22,7 @@ setuptools.setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.10',
         'License :: OSI Approved :: MIT License',
         'Operating System :: MacOS',
         'Operating System :: POSIX :: Linux'
