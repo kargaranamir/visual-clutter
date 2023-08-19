@@ -18,6 +18,10 @@ Python Implementation of two measures of visual clutter (Feature Congestion and 
 pip install visual-clutter
 ```
 
+```
+# install from git
+pip install git+https://github.com/kargaranamir/visual-clutter
+```
 
 
 ## How to use (Examples)
