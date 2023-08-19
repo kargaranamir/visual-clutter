@@ -1,6 +1,6 @@
 opencv-python>=4.5.3,<4.6
 numpy>=1.22,<1.25
 scipy>=1.7.0,<1.10
-Pillow>=8.3.1,<9
+Pillow>=8.3.1,<9.0
 pyrtools>=1.0.0,<1.2.0
 scikit-image>=0.16.2,<0.21
