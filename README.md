@@ -81,3 +81,7 @@ visual_clutter python package is now part of [AIM2](https://github.com/aalto-ui/
 
 ## Studies Referencing Our Package
 - [Master Thesis](https://www.merlin.uzh.ch/contributionDocument/download/15217): Unveiling the Inner Structures of the Montreux Jazz Festival Concert
+- [Proceedings of the Human Factors and
+Ergonomics Society Annual Meeting](https://journals.sagepub.com/doi/pdf/10.1177/21695067231192703): Evaluating the Usability of Common
+Warnings across Industries Using the
+System Usability Scale
